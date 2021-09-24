@@ -1,0 +1,149 @@
+@media (max-width: 991px) {
+    /* responsive start */
+
+        .menu{
+            display: none;
+        }
+        .menu-icon {
+            display: block;
+            margin-top: 30px;
+        }
+        .menu-icon i{
+            color: white;
+            font-size: 50px;
+        }
+        .content{
+            flex-wrap: nowrap;
+        }
+        .appointment-form{
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 30px 0;
+        }
+        .box-1{
+            width: 45%;
+            height: auto;
+            margin-right: 30px;
+        }
+        .service-title h1::after{
+            left: 30%;
+        }
+        .service-title:hover h1::after{
+            width: 343px;
+        }
+        .box-text h3::after{
+            left: 23%;
+        }
+        .box-text:hover h3::after{
+            width: 140px;
+        }
+        .box-3{
+            width: 45%;
+        }
+      
+
+
+    /* responsive end */
+}
+
+
+
+@media (max-width: 600px) {
+    /* responsive start */
+
+   .title h1{
+       width: 100%;
+       color: white;
+       font-size: 1.3rem;
+       margin-top: -60px;
+       margin-left: -45px;
+    }
+   .title p{
+       width: 100%;
+    
+   }
+  .content{
+       flex-wrap: wrap;
+   }
+
+    h5{
+        color: white;
+        display: block;
+        border: 2px solid white;
+        margin-top: 20px;
+        width: 100px;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-left: -45px;
+    }
+    .title p{
+        display: none;
+    }
+    .form-section input{
+        outline: none;
+        width: 300px;
+        padding: 4px 2px;
+        margin: 5px 0;
+        background: none;
+        border: 1px solid white;
+        border-radius: 4px;
+        color: white;
+        
+    }
+    .text-box{
+        outline: none;
+        width: 300px;
+        padding: 0px 2px;
+        margin: 5px 0;
+        background: none;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+    }
+    .appointment-form{
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        margin-left: -50px;
+    }
+    .box-1{
+        width: 100%;
+        height: auto;
+       
+    }
+    .service-title h1{
+        margin-left: -40px;
+        font-size: 23px;
+    }
+    .service-title p{
+        margin-left: -40px;
+    }
+    .box-2{
+        width: 100%;
+        height: auto;
+        margin: 40px 10px;
+    }
+    .fit{
+        width: 50%;
+        margin: 10px 0px;
+    }
+    .service-title h1::after{
+        left: 10%;
+    }
+    .service-title:hover h1::after{
+        width: 300px;
+    }
+    .box-text h3::after{
+        left: 30%;
+    }
+    .box-text:hover h3::after{
+        width: 140px;
+    }
+    .box-3{
+        width: 100%;
+    }
+
+  
+    
+    
+
+    /* responsive end */
+}

@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+ul li{
+    list-style: none;
+    transition: 1s;
+}
+ul li:hover{
+    transform: translateY(-10px);
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+}
+a:hover{
+    color: yellow;
+}
+h1{
+    text-transform: uppercase;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.header-area{
+    background-image: url(img/cover.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.header-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+}
+.container{
+    margin: 0 50px;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 160px;
+}
+.menu{
+    width: 40%;
+    
+}
+.menu-icon {
+    color: #fff;
+    display: none;
+}
+.menu > ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    position: relative;
+    
+}
+.menu ul li{
+    padding: 10px;
+}
+.menu ul li ul{
+    width: 200px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.menu ul li ul::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: -10px;
+    left: 5px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+.menu ul li:hover > ul{
+    display: block;
+    z-index: 1;
+}
+.menu ul li ul li > ul{
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 100%;
+    z-index: 3;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 110px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.title h1{
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+.title p{
+    color: white;
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+h5{
+    color: white;
+    display: none;
+}
+.appointment-form{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.form-section input{
+    outline: none;
+    width: 300px;
+    padding: 7px 2px;
+    margin: 8px 0;
+    background: none;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+}
+.text-box{
+    outline: none;
+    width: 300px;
+    padding: 7px 2px;
+    margin: 8px 0;
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+.form-section button{
+    width: 300px;
+    padding: 7px 2px;
+    margin: 8px 0;
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.form-section button:hover{
+    background: #e9e9e9;
+    color: rgb(41, 16, 16);
+    border-radius: 10px 80px;
+}
+.fas fa-share{
+    color: white;
+}
+
+/* Header section end */
+
+
+
+/* service section */
+.background-photo{
+    width: 100%;
+    height: auto;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+}
+    .service-title{
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .service-title h1{
+        width: 100%;
+        text-align: center;
+        color:black;
+        position: relative;
+    }
+    .service-title h1::after{
+        content: '';
+        display: block;
+        height: 5px;
+        width: 0px;
+        top: 95%;
+        left: 33%;
+        position: absolute;
+        background-color: black;
+        border-radius: 20px;
+        transition: 1s;
+    }
+    .service-title:hover h1::after{
+        width: 490px;
+    }
+    .service-title p{
+        margin-top: 20px;
+        color: gray;
+    }
+    .content-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .box-1{
+        width: 22%;
+        height: auto;
+        background: white;
+        background: none;
+        margin: 90px 0;
+        text-align: center;
+        padding: 15px;
+        border: 1px solid gray;
+        transition: 0.5s;
+        box-shadow: 2px 5px 10px ;
+    }
+    .box-1:hover{
+        background: lavender;
+        transform: translateY(-14px);
+        
+    }
+    .box-1 i{
+        font-size: 60px;
+        color: darkorange;
+    }
+    .box-1 h3{
+        text-transform: uppercase;
+        margin: 15px 0;
+        
+    }
+    .box-1 p{
+        font-size: 14px;
+    }
+
+/* service section end */
+
+
+
+
+
+/* properties section */
+
+.box-2{
+    width: 30%;
+    height: auto;
+    margin: 20px 0;
+    box-shadow: 2px 5px 10px ;
+}
+
+.box-text h3{
+    border: 2px solid gray;
+    background-color: gray;
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 17px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.box-text h3::before{
+    content: '';
+    display: block;
+    height: 20px;
+    width:15px;
+    top: -10px;
+    left: 5px;
+    position: absolute;
+    background-color: gray;
+    transform: rotate(45deg);
+    transition: 2s;
+}
+
+.box-text h3::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    top: 32px;
+    left: 35%;
+    position: absolute;
+    background-color: red;
+    border-radius: 10px;
+    transition: 2s;
+   
+}
+.box-text:hover h3::after{
+    width: 130px;
+}
+
+
+.box-text h3:hover{
+    background-color: gray;
+    color: red;
+    transform: translateY(10px);
+}
+.box-text h6{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 10px;
+    letter-spacing: 4px;
+}
+.home-facilities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+.box-img{
+    position: relative;
+    overflow: hidden;
+}
+.sale{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sale h3{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fcff68;
+    width: 100%;
+    padding: 4px 10px;
+    font-size: 10px;
+}
+.address-icon{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: block;
+    transition: 1s;
+}
+.address-icon ul{
+    display: flex;
+    justify-content: left;
+    padding: 30px 50px;
+   
+}
+.address-icon ul li{
+    padding: 0 20px;
+    margin-right: -20px;
+    font-size: 30px;
+    
+}
+.address-icon ul a{
+    color: #fcff68;
+}
+.box-img:hover .address-icon{
+    bottom: 0; 
+}
+.address-icon ul a h2{
+    margin-left: 20px;
+    cursor: pointer;
+    color: #fcff68;
+    border: 2px solid ;
+    font-size: 16px;
+    padding: 7px;
+}
+
+/* properties section end */
+
+
+
+
+/* client feedback */
+
+.client-feedback-title{
+    margin: 70px 0;
+    padding-top: 40px;
+}
+.client-feedback-title h1{
+    letter-spacing: 4px;
+}
+.client-feedback-title p{
+    color: gray;
+}
+.client-feedback{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box-3{
+    width: 23%;
+    height: auto;
+    margin: 50px 0;
+    box-shadow: 2px 5px 10px;
+    transition: 0.5s;
+}
+.box-3:hover{
+    transform: translateY(-40px);
+}
+.box-3 h4{
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin: 10px 6px;
+}
+.box-3 p{
+    padding-left: 6px;
+}
+.box-3 i{
+    padding-left: 6px;
+    padding-bottom: 15px;
+}
+.box-3-img{
+    position: relative;
+    overflow: hidden;
+}
+.icon{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    width: 60px;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    transition: 1s;
+}
+.icon ul{
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.icon ul li a{
+    color: #00a8ff;
+}
+.box-3-img:hover .icon{
+    left: 84%;
+}
+
+/* client feedback end */
+
+/* footer section */
+
+.footer-background{
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: auto;
+}
+
+.footer-text h6{
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-top: 30px;
+    color: silver;
+}
+
+.footer-icon ul{
+    display: flex;
+}
+.footer-icon ul a{
+    margin: 30px 7px;
+    color: #00a8ff;
+}
+
